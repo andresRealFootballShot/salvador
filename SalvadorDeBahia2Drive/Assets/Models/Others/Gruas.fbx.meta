@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Carbon Steel
+    second: {fileID: 2100000, guid: 2208cc26865bb15498441ecc6174de4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Floor
     second: {fileID: 2100000, guid: 70b1f078f8c3d4c4a81780bd86bbada3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GeneralStone
+    second: {fileID: 2100000, guid: 74a6db921ff108e4fa4c459e729edc1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_Roof_tfrneges.001
+    second: {fileID: 2100000, guid: efb6ae5d8362b2847b6e8c1172b2b863, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -22,8 +37,40 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Wall Stone 6
+    second: {fileID: 2100000, guid: d11c54b0429d98f4a99b58ee0717538f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall2
+    second: {fileID: 2100000, guid: eaf5019c2b3023f4a8bf78989fdfeed5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallMud.003
+    second: {fileID: 2100000, guid: 47dde24288f71874dbf9958485e22c3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window
+    second: {fileID: 2100000, guid: c83445bdbaace994eb03109e4817cdbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Wood.001
     second: {fileID: 2100000, guid: 9a2a9b6232f7f8f4eb36a59eb1a8c46f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood.002
+    second: {fileID: -7238608322629146716, guid: 64bb089601dc44744a8a5f6b0ffcc36c,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood.003
+    second: {fileID: -876546973899608171, guid: d4fd40dd1fb84984894ae9e9dbe366b9,
+      type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

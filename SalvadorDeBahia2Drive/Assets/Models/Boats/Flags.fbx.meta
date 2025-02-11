@@ -32,6 +32,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: FlagRed2
+    second: {fileID: 2100000, guid: 91f816c7ed0d7af469f15ba4c51282ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Wood.026
     second: {fileID: 2100000, guid: 9a2a9b6232f7f8f4eb36a59eb1a8c46f, type: 2}
   materials:
