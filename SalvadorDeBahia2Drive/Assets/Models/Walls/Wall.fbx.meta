@@ -7,6 +7,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: MedievalDoor
+    second: {fileID: 2100000, guid: 394c385292b477747a64eac348016cc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steel.004
+    second: {fileID: 2100000, guid: 2208cc26865bb15498441ecc6174de4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Wall1.001
     second: {fileID: 2100000, guid: bd017b5d4d91253408179e1669c3209a, type: 2}
   materials:
