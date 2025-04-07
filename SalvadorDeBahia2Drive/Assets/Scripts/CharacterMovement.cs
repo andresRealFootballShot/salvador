@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class CharacterMovement : MonoBehaviour
 {
+    public bool isMobile;
     public float speed = 5.0f;
     public float maxSpeed = 50,minSpeed=5;
     public float sprint = 10.0f;
