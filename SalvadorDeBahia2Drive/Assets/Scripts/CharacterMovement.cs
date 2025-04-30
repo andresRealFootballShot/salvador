@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 [RequireComponent(typeof(CharacterController))]
 public class CharacterMovement : MonoBehaviour
 {
     public bool isMobile;
+    public Joystick joystick;
     public float speed = 5.0f;
     public float maxSpeed = 50,minSpeed=5;
     public float sprint = 10.0f;
@@ -34,6 +36,11 @@ public class CharacterMovement : MonoBehaviour
         // Detecta la entrada horizontal del usuario (teclas A/D o flechas izquierda/derecha)
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
+        if (isMobile)
+        {
+            horizontalInput = joystick.Horizontal;
+            verticalInput = joystick.Vertical;
+        }
 
         //float sprintInput = (Input.GetAxis("Fire1"))* sprint;
         float upDownInput = Input.GetAxis("UpDown");
@@ -42,10 +49,13 @@ public class CharacterMovement : MonoBehaviour
         Vector3 moveUp = Camera.main.transform.up * (upDownInput * currentSpeed + upDownInput);
         // Mueve el CharacterController en la dirección deseada multiplicada por la velocidad y el tiempo
         controller.Move((move + moveUp)  * Time.deltaTime);
-
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
-
+        float mouseX = 0;
+        float mouseY = 0;
+        if (!isMobile || (Input.touchCount > 0 && !EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId)))
+        {
+            mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+            mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        }
         // Aplica la rotación horizontal al personaje (eje Y)
         rotationX += mouseX;
 
@@ -54,6 +64,13 @@ public class CharacterMovement : MonoBehaviour
         rotationY = Mathf.Clamp(rotationY, -90f, 90f); // Limita el ángulo vertical entre -90 y 90 grados
 
         // Aplica la rotación vertical al componente de cámara
+        //Camera.main.transform.localRotation = Quaternion.Euler(rotationY, rotationX, 0f);
+    }
+    public void RotateCamera(float deltaX, float deltaY)
+    {
+        rotationX += deltaX * mouseSensitivity * Time.deltaTime;
+        rotationY -= deltaY * mouseSensitivity * Time.deltaTime;
+        rotationY = Mathf.Clamp(rotationY, -90f, 90f);
         Camera.main.transform.localRotation = Quaternion.Euler(rotationY, rotationX, 0f);
     }
 }
