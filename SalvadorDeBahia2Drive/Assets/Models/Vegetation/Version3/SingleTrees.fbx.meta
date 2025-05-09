@@ -7,6 +7,22 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Rock1
+    second: {fileID: 2100000, guid: 52b19a188e9b4504ca4c94e9c5045fb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock2
+    second: {fileID: 2100000, guid: 1e51eb5a275dac14dbc36e4819acb753, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rock3
+    second: {fileID: -3766189545698391332, guid: 728b108b940b8c84492545dc5f7106ad,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Tree3
     second: {fileID: 2100000, guid: 381b1304bbcd265409100d0d2f374821, type: 2}
   materials:

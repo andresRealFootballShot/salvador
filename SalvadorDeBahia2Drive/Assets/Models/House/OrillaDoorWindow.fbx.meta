@@ -8,8 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Board.002
-    second: {fileID: -5425771592427249837, guid: cdabbb8b0e52a73498f58d5fd96acae1,
-      type: 3}
+    second: {fileID: 2100000, guid: 506fb94a6678bb141913e17685ef030e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -34,8 +33,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Window
-    second: {fileID: 8992934318045909824, guid: cdabbb8b0e52a73498f58d5fd96acae1,
-      type: 3}
+    second: {fileID: 2100000, guid: c83445bdbaace994eb03109e4817cdbd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

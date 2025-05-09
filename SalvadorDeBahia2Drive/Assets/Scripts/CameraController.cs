@@ -6,10 +6,12 @@ using System.Threading;
 
 public class CameraController : MonoBehaviour
 {
-    public FixedJoystick joystick;
-    public RectTransform joystickArea; // área visible del joystick
+    public Joystick joystick1, joystick2;
+    public RectTransform joystickArea1, joystickArea2,sliderArea; // área visible del joystick
+    public Slider speedSlider;
     public Transform cameraTransform;
     public float moveSpeed = 5f;
+    public float maxMoveSpeed = 50f,minMoveSpeed;
     public float rotationSpeed = 0.2f;
 
     private Dictionary<int, Vector2> lastTouchPositions = new();
@@ -57,23 +59,34 @@ public class CameraController : MonoBehaviour
 
     void MoveWithJoystick()
     {
-        Vector3 dir = new Vector3(joystick.Horizontal, 0, joystick.Vertical);
-        dir = cameraTransform.TransformDirection(dir);
-        dir.y = 0;
-        cameraTransform.position += dir * moveSpeed * Time.deltaTime;
+        // Movimiento de joystick1: adelante / atrás (Z) y izquierda / derecha (X)
+        Vector3 dir1 = new Vector3(joystick1.Horizontal, 0, joystick1.Vertical);
+        dir1 = cameraTransform.TransformDirection(dir1);
+
+        // Movimiento de joystick2: izquierda / derecha (X) y arriba / abajo (Y)
+        Vector3 dir2 = new Vector3(joystick2.Horizontal,0, 0);
+        dir2 = cameraTransform.TransformDirection(dir2)+Vector3.up * joystick2.Vertical;
+        float sliderValue = Mathf.Lerp(minMoveSpeed, maxMoveSpeed, speedSlider.value);
+        float currentSpeed = speedSlider != null ? sliderValue : moveSpeed;
+
+        cameraTransform.position += (dir1 + dir2) * currentSpeed * Time.deltaTime;
     }
 
     bool IsTouchOverJoystickArea(Vector2 screenPosition)
     {
-        // Convertir pantalla → UI local
         Vector2 localPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            joystickArea,
-            screenPosition,
-            null, // si usas Canvas World, pasa la cámara aquí
-            out localPoint
-        );
+        bool overJoystick1 = RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            joystickArea1, screenPosition, null, out localPoint
+        ) && joystickArea1.rect.Contains(localPoint);
 
-        return joystickArea.rect.Contains(localPoint);
+        bool overJoystick2 = RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            joystickArea2, screenPosition, null, out localPoint
+        ) && joystickArea2.rect.Contains(localPoint);
+
+        bool overSlider = RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            sliderArea, screenPosition, null, out localPoint
+        ) && sliderArea.rect.Contains(localPoint);
+
+        return overJoystick1 || overJoystick2 || overSlider;
     }
 }

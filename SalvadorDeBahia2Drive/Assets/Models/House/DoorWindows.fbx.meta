@@ -3,7 +3,49 @@ guid: 64bb089601dc44744a8a5f6b0ffcc36c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Board.002
+    second: {fileID: 2100000, guid: 506fb94a6678bb141913e17685ef030e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Carbon Steel
+    second: {fileID: 2100000, guid: 2208cc26865bb15498441ecc6174de4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GeneralStone
+    second: {fileID: 2100000, guid: 47dde24288f71874dbf9958485e22c3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Granito
+    second: {fileID: 2100000, guid: 1a062722ab6402f47801773fdf8e51b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall2
+    second: {fileID: 5385472550944315801, guid: cdabbb8b0e52a73498f58d5fd96acae1,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window
+    second: {fileID: 2100000, guid: c83445bdbaace994eb03109e4817cdbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood.002
+    second: {fileID: 2100000, guid: f7fc01683e9e63a47850277f0401cc20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood.003
+    second: {fileID: -876546973899608171, guid: d4fd40dd1fb84984894ae9e9dbe366b9,
+      type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
