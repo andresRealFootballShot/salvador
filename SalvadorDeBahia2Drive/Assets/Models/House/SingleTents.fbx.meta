@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 7d92ea2be26228a419e4beb8e40ccb13
+guid: df70c6b1a39353a42a051f9cebdd670b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tent
+    second: {fileID: 2100000, guid: 8d7d8bf43bb589e4ba238ceb88d5327f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
