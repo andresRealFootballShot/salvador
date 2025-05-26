@@ -18,6 +18,7 @@ public class CameraController : MonoBehaviour
     private HashSet<int> ignoredFingerIds = new();
     private float rotationY = 0f;
     private float rotationX = 0f;
+    public CharacterController controller;
     void Update()
     {
         MoveWithJoystick();
@@ -69,7 +70,8 @@ public class CameraController : MonoBehaviour
         float sliderValue = Mathf.Lerp(minMoveSpeed, maxMoveSpeed, speedSlider.value);
         float currentSpeed = speedSlider != null ? sliderValue : moveSpeed;
 
-        cameraTransform.position += (dir1 + dir2) * currentSpeed * Time.deltaTime;
+        //cameraTransform.position += (dir1 + dir2) * currentSpeed * Time.deltaTime;
+        controller.Move((dir1 + dir2) * currentSpeed * Time.deltaTime);
     }
 
     bool IsTouchOverJoystickArea(Vector2 screenPosition)

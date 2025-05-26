@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Roof
-  m_Shader: {fileID: -6465566751694194690, guid: c16935824c80bdb4daabe010c05031f2,
+  m_Shader: {fileID: -6465566751694194690, guid: 776bb6b26e772c447ba607fba36f3ba7,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -41,6 +41,10 @@ Material:
     m_TexEnvs:
     - _AO:
         m_Texture: {fileID: 2800000, guid: d6716d9e71dcc7948afc267021dcfb5f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: b3f297ece3f796f409d192bdd42472c7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColor:
@@ -75,8 +79,28 @@ Material:
         m_Texture: {fileID: 2800000, guid: b3f297ece3f796f409d192bdd42472c7, type: 3}
         m_Scale: {x: 1.4, y: 2}
         m_Offset: {x: 0, y: 0}
+    - _Metallic:
+        m_Texture: {fileID: 2800000, guid: 74159b934caee4c41ab91ed5a3698c9d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 2800000, guid: f55bec0c0cd8bc740afffbf4e433fe22, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MudAlbedo:
+        m_Texture: {fileID: 2800000, guid: 1a838c8b06282824080dde9276116763, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MudMetallic:
+        m_Texture: {fileID: 2800000, guid: f6eb5ad97e0cd8045be32956ec93821c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MudNormal:
+        m_Texture: {fileID: 2800000, guid: ac9f34f632e5afc4798bfd339ad3758b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MudOpacity:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
@@ -132,12 +156,17 @@ Material:
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
+    - _MudOpacity: 1
+    - _NoiseScale: 3103.7
+    - _NoiseScale2: 6696
+    - _NoiseSubstract1: 0.3
+    - _NoiseSubstract2: 0.4
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0
+    - _Smoothness: 0.25
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -146,10 +175,13 @@ Material:
     - _UVSec: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - _normalMud: 1
     m_Colors:
     - _BaseColor: {r: 0.9063317, g: 0.9063317, b: 0.9063317, a: 1}
     - _Color: {r: 0.9063317, g: 0.9063317, b: 0.9063317, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MudTiling: {r: 10, g: 10, b: 0, a: 0}
+    - _NoiseTiling: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tiling: {r: 1.4, g: 2, b: 0, a: 0}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
