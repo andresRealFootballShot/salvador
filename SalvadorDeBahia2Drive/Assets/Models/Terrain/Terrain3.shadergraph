@@ -2,7 +2,11 @@
     "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "3d193a0836804a2a8d379201315e80d3",
-    "m_Properties": [],
+    "m_Properties": [
+        {
+            "m_Id": "844fb07add854155b87395ef93d8656d"
+        }
+    ],
     "m_Keywords": [],
     "m_Dropdowns": [],
     "m_CategoryData": [
@@ -3556,7 +3560,11 @@
     "m_Type": "UnityEditor.ShaderGraph.CategoryData",
     "m_ObjectId": "2bd45aeb4f0d4eb893e5381d3797d2db",
     "m_Name": "",
-    "m_ChildObjectList": []
+    "m_ChildObjectList": [
+        {
+            "m_Id": "844fb07add854155b87395ef93d8656d"
+        }
+    ]
 }
 
 {
@@ -3639,10 +3647,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -4582.99951171875,
-            "y": -169.99989318847657,
+            "x": -4585.00048828125,
+            "y": -169.0,
             "width": 208.0,
-            "height": 126.99993896484375
+            "height": 126.99998474121094
         }
     },
     "m_Slots": [
@@ -7047,6 +7055,34 @@
 
 {
     "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "844fb07add854155b87395ef93d8656d",
+    "m_Guid": {
+        "m_GuidSerialized": "0db4ebbd-3302-40e9-bb29-eeae495afebb"
+    },
+    "m_Name": "Smoothness",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Smoothness",
+    "m_DefaultReferenceName": "_Smoothness",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.4000000059604645,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.NoiseNode",
     "m_ObjectId": "8509fc87d0e241e6839bc6c7f329a751",
     "m_Group": {
@@ -8003,13 +8039,13 @@
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
-        "m_Expanded": false,
+        "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
             "x": -3374.0,
-            "y": -1644.9998779296875,
-            "width": 155.0,
-            "height": 155.0
+            "y": -1764.0,
+            "width": 208.0,
+            "height": 339.0
         }
     },
     "m_Slots": [
@@ -8042,7 +8078,7 @@
         "tex2d"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {

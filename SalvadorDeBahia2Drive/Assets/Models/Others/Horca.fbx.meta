@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Rope.004
-    second: {fileID: 2100000, guid: ae3a097833f7186419b89f09b3fef300, type: 2}
+    second: {fileID: 2100000, guid: 8eae664618b553b48809f297e2e5cbaa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
