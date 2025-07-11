@@ -17,6 +17,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Wall1
+    second: {fileID: 2100000, guid: bd017b5d4d91253408179e1669c3209a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Wall1.001
     second: {fileID: 2100000, guid: bd017b5d4d91253408179e1669c3209a, type: 2}
   materials:

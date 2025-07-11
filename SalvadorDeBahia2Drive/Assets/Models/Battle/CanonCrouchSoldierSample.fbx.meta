@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: f008bec106c6e7e4ca33cec7ece658a8
+guid: f79f6f7577e7b2946ada6e4a560aa509
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: SoldierH1
-    second: {fileID: 2100000, guid: 47145f52c6d69a244b50b3c5974723f1, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
