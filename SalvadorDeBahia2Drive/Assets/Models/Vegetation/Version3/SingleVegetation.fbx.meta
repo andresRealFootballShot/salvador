@@ -39,6 +39,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Tree3
     second: {fileID: 2100000, guid: 381b1304bbcd265409100d0d2f374821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: default_material
+    second: {fileID: 2100000, guid: 1e51eb5a275dac14dbc36e4819acb753, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: default_material.001
+    second: {fileID: 2100000, guid: f7ea081990d865544af850e9c38ac8e0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
