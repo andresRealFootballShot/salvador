@@ -27,6 +27,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: WallMud.001
+    second: {fileID: 2100000, guid: 47dde24288f71874dbf9958485e22c3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: WallMud.003
     second: {fileID: 2100000, guid: 47dde24288f71874dbf9958485e22c3c, type: 2}
   materials:
